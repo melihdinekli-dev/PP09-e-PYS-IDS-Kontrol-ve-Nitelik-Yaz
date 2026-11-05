@@ -15,7 +15,7 @@ src/core/        IFC okuma (ifc_step, ifc_model), IDS okuma ve denetim (ids_read
 src/allplan/     Allplan sarmalayıcı (ePYS_IDS.py) ve e-PYS IFC çekirdeği (ePYS_IDS_IfcDuzenle.py)
 resources/       Bakanlık IDS dosyası, eşleme kuralları, kütüphane simgesi
 tools/           Paket parçalarını üretenler: merge.py (çekirdeği tek dosyaya birleştirir),
-                 gen_pyp.py (palet), gen_form.py (Proje Bilgi Formu şablonu), icon.py
+                 gen_pyp.py (palet), gen_form.py (Proje Bilgi Formu şablonu), kur.py (Allplan'a kurulum), icon.py
 tests/           pytest: çekirdek (sentetik IFC), nitelik yazma (Allplan taklidi), paket/palet kontrolleri
 docs/            Kurulum, kullanıcı kılavuzu, DevOps analizi, Allplan test listesi
 build.py         Paket üretimi -> dist/ePYS_IDS_Allplan2026_<VERSION>.zip
@@ -30,6 +30,15 @@ python -m pytest -q                 # tüm testler
 python build.py --kontrol           # paket + içerik kontrolü
 python dist/ePYS_IDS_Allplan2026_R21/PythonPartsScripts/ALUPLAN/ePYS_IDS_core.py model.ifc --duzelt   # Allplan dışında
 ```
+
+Allplan'a kurmak / geri almak (yedekli):
+
+```bash
+python tools/kur.py           # derle + yedekle + Usr\Local'e kopyala
+python tools/kur.py --geri-al # son yedeğe dön
+```
+
+Windows'ta adım adım kurulum ve günlük akış: [docs/YEREL_KURULUM.md](docs/YEREL_KURULUM.md).
 
 Çekirdek yalnız Python standart kütüphanesini kullanır; `openpyxl` yalnız form şablonu üretimi ve testler için gerekir.
 
