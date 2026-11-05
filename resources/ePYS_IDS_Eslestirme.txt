@@ -1,0 +1,46 @@
+# ============================================================
+#  e-PYS IFC eşleştirme dosyası  (ALUPLAN)
+# ============================================================
+#  Her satır bir kural:
+#     KaynakNitelik -> Hedef
+#     IfcSinifi: KaynakNitelik -> Hedef        (yalnız o sınıf)
+#     IfcWall,IfcSlab: KaynakNitelik -> Hedef  (birden çok sınıf)
+#
+#  KaynakNitelik: AllplanAttributes içinde görünen ad.
+#                 Tam listeyi "1) Analiz et" raporundan alın.
+#                 Büyük/küçük harf fark etmez.
+#
+#  Hedef (BIMcollab'da Summary'de görünen IFC alanları).
+#  Türkçe ya da İngilizce yazılabilir:
+#     İsim       = Name         – tüm elemanlar
+#     Açıklama   = Description  – tüm elemanlar
+#     Tip        = ObjectType   – tüm elemanlar
+#     Etiket     = Tag          – yapı elemanları (duvar, kolon, kapı...); mahalde yok
+#     Uzun Ad    = LongName     – yalnız mahal, kat, bina, arsa, proje
+#
+#  Hedef olarak Pset de verilebilir:
+#     ePYS.Mahal_No   -> "ePYS" setine "Mahal_No" adıyla
+#     ePYS.           -> "ePYS" setine aynı adla
+#
+#  "*" kuralı, kendisinden önceki kurallarla eşleşmeyen TÜM nitelikleri
+#  taşır. AllplanAttributes'un tamamen boşalması isteniyorsa en sona koyun.
+#  Sıra önemlidir: üstteki kural önce uygulanır.
+# ============================================================
+
+# --- Allplan 2026 Kolon_Tag_1 dosyasındaki gerçek nitelik adları ---
+İsim                         -> İsim
+Kısa Yazı (Açıklama)         -> Açıklama
+Kod yazısı                   -> Etiket
+
+# --- Mahaller (IfcSpace) ---
+# Mahal kodu (örn. K01_D08_002) mahalin İsim'i (IFC Name) olur.
+# Bu satır yukarıdaki "İsim" kuralından sonra geldiği için mahallerde onu ezer.
+# Oda adı (DUŞ vb.) LongName'de kalır.
+IfcSpace: CSB_Mahal          -> İsim
+
+# --- Kalan nitelikler ---
+# Bakanlık ne AllplanAttributes ne de ePYS setini görmek istiyor.
+# Bu yüzden kural dışı kalan nitelikler IFC'den tamamen silinir
+# (palette "AllplanAttributes setini tamamen sil" işaretli olmalı).
+# Kalanları ayrı bir sete taşımak isterseniz alttaki satırı açın:
+# * -> ePYS.
