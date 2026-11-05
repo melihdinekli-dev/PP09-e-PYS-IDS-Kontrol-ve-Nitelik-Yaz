@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 """PP09 e-PYS IDS Kontrol ve Nitelik Atama – Allplan 2026 – ALUPLAN
 
 İki iş yapar:

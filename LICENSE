@@ -1,6 +1,39 @@
+TESCİLLİ YAZILIM LİSANSI – KAPALI KAYNAK
+=======================================
+
+PP09 – e-PYS IDS Kontrol ve Nitelik Yaz (Allplan 2026 PythonPart)
 Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
 
-Bu yazılım (PP09 e-PYS IDS Kontrol ve Nitelik Yaz) ALUPLAN'ın mülkiyetindedir.
-Yazılı izin olmadan kopyalanamaz, değiştirilemez, dağıtılamaz veya satılamaz.
-"ePYS_IDS_Kurallar.ids" dosyası T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın
-e-PYS IDS dosyasıdır ve kendi koşullarına tabidir.
+Bu yazılım açık kaynak DEĞİLDİR. Kaynak kodu, derlenmiş paketleri, belgeleri ve bu depodaki
+tüm içerik ("Yazılım") ALUPLAN'ın ticari sırrı ve fikri mülkiyetidir.
+
+1. Kullanım hakkı
+   Yazılım yalnız ALUPLAN ile yazılı lisans ya da abonelik sözleşmesi yapmış kullanıcılar
+   tarafından, sözleşmede belirtilen süre, kullanıcı sayısı ve kapsam içinde kullanılabilir.
+   Lisans devredilemez ve münhasır değildir.
+
+2. Yasaklar – ALUPLAN'ın önceden yazılı izni olmadan:
+   a) Yazılımın tamamı veya bir bölümü kopyalanamaz, çoğaltılamaz, dağıtılamaz, yayımlanamaz,
+      kiralanamaz, satılamaz ya da üçüncü kişilere erişime açılamaz;
+   b) Yazılım değiştirilemez, uyarlanamaz, başka yazılımlara katılamaz, türev çalışma üretilemez;
+   c) Tersine mühendislik, kaynak koda dönüştürme veya lisans/sürüm denetimlerinin
+      atlatılması yapılamaz;
+   d) Telif, marka ve lisans bildirimleri kaldırılamaz veya değiştirilemez.
+
+3. Depoya erişim
+   Bu depoya erişim izni, Yazılımı kullanma veya dağıtma lisansı anlamına gelmez. Erişim yalnız
+   ALUPLAN'ın yetkilendirdiği kişilere, geliştirme ve destek amacıyla verilir; erişim hakkı
+   sona erdiğinde yerel kopyalar silinmelidir.
+
+4. Üçüncü taraf içerik
+   "resources/ePYS_IDS_Kurallar.ids", T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın
+   e-PYS IDS dosyasıdır ve kendi koşullarına tabidir; bu lisans kapsamında değildir.
+   Allplan ve PythonParts, ALLPLAN GmbH'nin (Nemetschek Group) markalarıdır.
+
+5. Garanti ve sorumluluk
+   Yazılım "olduğu gibi" sağlanır. Yazılı sözleşmede aksi belirtilmedikçe ALUPLAN, Yazılımın
+   kullanımından doğan doğrudan veya dolaylı zararlardan sorumlu değildir. Yazılımın ürettiği
+   IFC dosyaları ve raporlar, resmî başvurudan önce kullanıcı tarafından kontrol edilmelidir.
+
+6. İletişim
+   Lisans ve izin talepleri: ALUPLAN – Allplan Türkiye Distribütörü.

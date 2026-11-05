@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 """IDS denetimi (gömülü e-PYS kuralları). ALUPLAN – PP09."""
 import re
 from ifc_model import IfcModel, is_empty

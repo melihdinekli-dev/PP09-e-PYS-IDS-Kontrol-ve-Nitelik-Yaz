@@ -41,7 +41,7 @@
 
 ## Kalan riskler ve öneriler
 
-1. **Repo herkese açık (public).** Kaynak kod ve iş bilgisi herkese görünür. PythonPart'lar satılacaksa repoyu **private** yapın (Settings → General → Danger Zone → Change visibility).
+1. **Gizlilik.** Proje kapalı kaynaktır (LICENSE: tescilli). Repo **private** olmalı ve yalnız yetkili kişilere erişim verilmelidir (Settings → Collaborators). Kaynak dosyalarda telif bildirimi bulunur.
 2. **Gerçek Allplan testi otomatik değil.** Taklit, Allplan'ın davranışını tam yansıtmaz (çökmeler bunu gösterdi). Her sürümden önce [ALLPLAN_TEST.md](ALLPLAN_TEST.md) listesi uygulanmalı; sonucu Release notuna yazılmalı.
 3. **Gerçek model regresyon testi yok.** Büyük müşteri IFC'leri repoya konamaz. Öneri: anonimleştirilmiş orta boy bir test modeli (ör. 1 kat, her eleman türünden birkaç tane) hazırlayıp beklenen "hatalı kontrol" sayısını teste bağlamak.
 4. **Büyük dosyalar.** `fixer.py` (~1.200 satır) ve `ePYS_IDS.py` (~1.200 satır) bölünebilir; önce testler genişletilmeli.

@@ -1,3 +1,5 @@
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 from PIL import Image, ImageDraw, ImageFont
 S=128; im=Image.new('RGBA',(S,S),(0,0,0,0)); d=ImageDraw.Draw(im)
 # document

@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 """Komut satırı: python ePYS_IDS_core.py model.ifc [--duzelt] (tools/merge.py bu dosyayı çekirdeğin sonuna ekler)."""
 import sys
 

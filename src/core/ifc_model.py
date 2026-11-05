@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 """IFC nesne bilgisi: nitelikler, Pset'ler, malzeme. ALUPLAN – PP09."""
 from ifc_step import IfcFile, Ref, Enum, Typed
 

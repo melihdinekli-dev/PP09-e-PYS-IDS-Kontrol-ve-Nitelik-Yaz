@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 """e-PYS Proje Bilgi Formu şablonu (build/ePYS_Proje_Bilgi_Formu.xlsx) – alanlar engine.FORM_ALANLAR'dan."""
 import os
 import sys

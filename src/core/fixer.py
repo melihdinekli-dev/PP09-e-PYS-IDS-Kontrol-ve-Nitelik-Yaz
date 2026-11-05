@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 """IFC'yi IDS'e göre otomatik düzeltir (yalnız dosyada zaten bulunan bilgiyle). ALUPLAN – PP09."""
 import re
 import uuid

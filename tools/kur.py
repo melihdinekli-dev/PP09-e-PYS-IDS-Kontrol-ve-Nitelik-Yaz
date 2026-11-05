@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 """PP09'u Allplan'a kurar (geliştirici bilgisayarı).
 
     python tools/kur.py                 paketi derler, mevcut PP09 dosyalarını yedekler, yenilerini kopyalar

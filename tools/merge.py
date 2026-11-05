@@ -1,3 +1,5 @@
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 import os
 import re
 import sys
@@ -8,6 +10,8 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'dist', 'ePYS_IDS
 SURUM = open(os.path.join(ROOT, 'VERSION'), encoding='utf-8').read().strip()
 parts=['ifc_step.py','ifc_model.py','ids_reader.py','checker.py','fixer.py','report.py','engine.py']
 head='''# -*- coding: utf-8 -*-
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 """e-PYS IDS Kontrol ve Nitelik Atama – çekirdek (PP09) – ALUPLAN
 
 Allplan dışında da çalışır (yalnız Python standart kütüphanesi):
@@ -30,6 +34,7 @@ out=[head % SURUM]
 for p in parts:
     s=open(os.path.join(CORE,p),encoding='utf-8').read()
     s=re.sub(r'^# -\*- coding: utf-8 -\*-\n','',s)
+    s=re.sub(r'^# Telif Hakkı.*\n# Kapalı kaynak.*\n','',s)
     s=re.sub(r'^""".*?"""\n','',s,flags=re.S)
     s=re.sub(r'^(import (re|uuid|zipfile|datetime|os)|from (ifc_step|ifc_model|checker|fixer|report|rules_gen|ids_reader) import .*|from xml\.sax\.saxutils import escape|import xml\.etree\.ElementTree as ET)\n','',s,flags=re.M)
     s=re.sub(r'^    from (ifc_model|checker|fixer|report|ids_reader) import .*\n','',s,flags=re.M)

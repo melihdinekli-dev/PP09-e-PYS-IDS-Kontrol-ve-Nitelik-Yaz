@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 # Otomatik üretildi: IDS_Hata_Raporu_EPYS_Allplan_R2.xlsx (EPYS_IDS v0.1.3)
 IDS_KURALLARI = [{'ad': 'IfcBeam Sınıfı Özellikleri - Ad Kontrol',
   'siniflar': ['IFCBEAM'],

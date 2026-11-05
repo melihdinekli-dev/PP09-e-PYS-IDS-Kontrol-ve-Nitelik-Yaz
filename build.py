@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 """PP09 e-PYS IDS Kontrol – paket üretimi.
 
     python build.py            -> dist/ePYS_IDS_Allplan2026_<VERSION>.zip

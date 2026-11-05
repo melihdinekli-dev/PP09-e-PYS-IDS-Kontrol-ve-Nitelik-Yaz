@@ -1,5 +1,7 @@
 # PP09 – e-PYS IDS Kontrol ve Nitelik Yaz (Allplan 2026)
 
+> **Kapalı kaynak – tescilli yazılım.** © ALUPLAN. Yetkisiz kopyalama, dağıtım ve kullanım yasaktır. Bkz. [LICENSE](LICENSE).
+
 ALUPLAN'ın Allplan 2026 PythonPart'ı. Bakanlığın **e-PYS IDS** kontrolüne hazırlık için iki iş yapar:
 
 1. **IFC dosyasını kontrol et ve düzelt** – Allplan'dan alınan IFC'yi bakanlığın `EPYS_IDS.ids` dosyasına (161 kural) göre denetler, dosyadaki bilgilerle ve Proje Bilgi Formu'yla düzeltip `<ad>_IDS.ifc` ve Excel rapor üretir. e-PYS IFC (PP03) eşlemesi de içindedir.
@@ -55,4 +57,6 @@ Müşteri IFC'leri, Proje Bilgi Formları, IDS raporları ve nitelik favorileri 
 
 ## Lisans
 
-Tescilli – bkz. [LICENSE](LICENSE). © ALUPLAN, Allplan Türkiye Distribütörü.
+**Kapalı kaynak, tescilli yazılım** – açık kaynak değildir. Kullanım yalnız ALUPLAN ile yapılan yazılı lisans / abonelik sözleşmesiyle mümkündür. Ayrıntılar: [LICENSE](LICENSE). Repo **private** tutulmalıdır.
+
+© 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.

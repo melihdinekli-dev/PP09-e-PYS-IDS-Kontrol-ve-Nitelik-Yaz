@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# Telif Hakkı (c) 2026 ALUPLAN – Allplan Türkiye Distribütörü. Tüm hakları saklıdır.
+# Kapalı kaynak, tescilli yazılım – bkz. LICENSE. Yetkisiz kopyalama ve dağıtım yasaktır.
 """IDS 1.0 (.ids) okuyucu -> PP09 kural yapısı. ALUPLAN – PP09."""
 import xml.etree.ElementTree as ET
 

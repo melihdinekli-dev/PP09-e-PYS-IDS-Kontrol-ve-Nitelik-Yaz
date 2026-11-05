@@ -5,6 +5,7 @@ Biçim: her sürüm `R<n>` etiketiyle yayınlanır (paket: `ePYS_IDS_Allplan2026
 ## [Yayınlanmamış]
 
 - Repo ve DevOps altyapısı: kaynak düzeni (`src/`), tekrarlanabilir paket (`build.py`), otomatik testler (`tests/`), GitHub Actions (CI + Release). Paket içeriği R21 ile aynı.
+- Lisans: kapalı kaynak, tescilli (LICENSE); kaynak dosyalara telif bildirimi.
 - `tools/kur.py`: Allplan'a yedekli kurulum ve `--geri-al`; `docs/YEREL_KURULUM.md`.
 
 ## [R21] – 04.11.2026
