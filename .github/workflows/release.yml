@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  push:
+    tags: ["R*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install -r requirements-dev.txt
+      - name: Etiket VERSION ile aynı mı?
+        run: test "$(cat VERSION)" = "${GITHUB_REF_NAME}"
+      - run: python -m pytest -q
+      - run: python build.py --kontrol
+      - name: Sürüm notu (CHANGELOG)
+        run: |
+          awk -v t="## [${GITHUB_REF_NAME}]" 'index($0,t)==1{f=1;next} /^## \[/{f=0} f' CHANGELOG.md > notlar.md
+          echo "" >> notlar.md
+          echo "Allplan test listesi: docs/ALLPLAN_TEST.md" >> notlar.md
+      - uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ github.ref_name }}
+          body_path: notlar.md
+          files: dist/ePYS_IDS_Allplan2026_${{ github.ref_name }}.zip

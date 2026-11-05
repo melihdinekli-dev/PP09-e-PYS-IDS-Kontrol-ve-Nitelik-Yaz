@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.11", "3.13"]   # Allplan 2026 Python 3.13 kullanır
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -r requirements-dev.txt
+      - name: Kod denetimi (sözdizimi, tanımsız adlar)
+        run: ruff check --select E9,F63,F7,F82 src tools tests build.py
+      - name: Testler
+        run: python -m pytest -q
+      - name: Paket
+        run: python build.py --kontrol
+      - uses: actions/upload-artifact@v4
+        if: matrix.python == '3.13'
+        with:
+          name: paket
+          path: dist/*.zip
