@@ -23,3 +23,7 @@ IDS_Hata_Raporu_*.xlsx
 ~$*
 Thumbs.db
 .DS_Store
+
+# Python sanal ortamı
+.venv/
+venv/
