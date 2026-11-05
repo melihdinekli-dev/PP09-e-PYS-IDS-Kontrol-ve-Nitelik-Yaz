@@ -1,0 +1,12 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.pyp text eol=lf
+*.ids text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.ifc text eol=lf
+*.png binary
+*.xlsx binary
+*.docx binary
+*.zip binary

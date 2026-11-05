@@ -1,0 +1,25 @@
+# Derleme çıktıları
+dist/
+build/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Müşteri / proje verisi – ASLA repoya girmez (kişisel ve resmî bilgi içerir)
+*.ifc
+!tests/fixtures/*.ifc
+*_IDS_Rapor.xlsx
+ePYS_Proje_Bilgi_Formu*.xlsx
+*_Varsayilan.txt
+IDS_Hata_Raporu_*.xlsx
+*.atfanfx
+*.log
+
+# Yerel / IDE
+.vscode/
+.idea/
+*.tmp
+~$*
+Thumbs.db
+.DS_Store
